@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>project1</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="title-img col-md-12">
+        <img src="images/title.png" class="title" alt="title">
+    </div>
+
+    <div class="form-text col-md-12">
+        <form class="form" method="GET" action="index1.html">
+            <div class="form-img">
+                <img src="images/formbg.jpg" class="img-form1" alt="img-form">
+                <label id="time">Time and Date:</label>
+                <input type="date" name="date" id="date" required>
+                <button type="button" name="btn-date" class="glyphicon glyphicon-erase" id="btn-date" onclick="erase1(this)"></button>
+                <input type="time" name="datetime" id="datetime" required>
+                <button type="button" name="btn-time" class="glyphicon glyphicon-erase" id="btn-time" onclick="erase1(this)"></button>
+                <img src="images/formbg.jpg" class="img-form2" alt="img-form">
+                <label id="tasks">Tasks Mission:</label>
+                <textarea name="textarea" id="textarea" rows="1" cols="20" placeholder="Tasks Mission" required></textarea>
+                <button type="button" name="btn-task" class="glyphicon glyphicon-erase" id="btn-task" onclick="erase1(this)"></button>
+                <img src="images/formbg.jpg" class="img-form3" alt="img-form">
+                <button type="submit" name="submit" class="btn btn-primary" id="submit" onclick="checkForm()"><span class="send">Send</span></button>
+                <img src="images/formbg.jpg" class="img-form4" alt="img-form" id="img-form4">
+                <label id="error"></label>
+            </div>
+        </form>
+    </div>
+
+    <div class="notes col-md-12" id="notes">
+        
+    </div>
+</body>
+
+<script src="js.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</html>
